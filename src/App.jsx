@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/style";
+import styles from "./style";
 import {
   Navbar,
   Hero,
@@ -11,7 +11,7 @@ import {
   Clients,
   CTA,
   Footer,
-} from "@/components";
+} from "./components";
 
 const App = () => {
   return (
