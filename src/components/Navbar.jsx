@@ -1,12 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { close, logo, menu } from "@/assets";
 import { navLinks } from "@/constants";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [scrollTop, setScrollTop] = useState(true);
+
+  useEffect(() => {
+    window.onscroll = () =>
+      window.pageYOffset === 0 ? setScrollTop(true) : setScrollTop(false);
+  }, []);
 
   return (
-    <nav className="w-full py-6 flex justify-between items-center navbar">
+    <nav
+      className={`fixed left-0 sm:px-16 px-6 ${
+        scrollTop ? "bg-transparent" : "bg-primary"
+      } transition z-[10] w-full py-6 flex justify-between items-center navbar`}
+    >
       <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
       <ul className="sm:flex hidden gap-10 list-none justify-end items-center">
         {navLinks.map((nav) => (

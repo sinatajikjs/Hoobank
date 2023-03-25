@@ -1,7 +1,17 @@
-import React from "react";
+import { footerLinks } from "../constants";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <section>
+      <div>
+        <div>
+          
+        </div>
+
+      </div>
+      <div></div>
+    </section>
+  );
 };
 
 export default Footer;

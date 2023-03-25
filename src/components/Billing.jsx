@@ -3,7 +3,7 @@ import { apple, bill, google } from "@/assets";
 
 const Billing = () => {
   return (
-    <section className="flex md:flex-row flex-col-reverse sm:py-16 py-6 gap-10">
+    <section id="product" className="flex md:flex-row flex-col-reverse sm:py-16 py-6 gap-10">
       <div className="flex-1 relative">
         <img src={bill} alt="bill" className="w-full h-full relative z-[5]" />
         {/* gradient start */}

@@ -3,7 +3,6 @@ import { quotes } from "../assets";
 const FeedbackCard = ({ feedBack }) => {
   return (
     <li
-      key={feedBack.id}
       className="flex flex-col max-w-[370px] justify-between gap-10 px-10 py-12 rounded-[20px] feedback-card cursor-default"
     >
       <img src={quotes} alt="quote-icon" className="w-[42px] h-[27px]" />
