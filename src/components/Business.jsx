@@ -5,12 +5,14 @@ styles;
 
 const Business = () => {
   return (
-    <section className={`sm:py-16 py-6 flex flex-col md:flex-row justify-center items-start gap-16`}>
+    <section
+      className={`sm:py-16 py-6 flex flex-col md:flex-row justify-center items-start gap-16`}
+    >
       <div className="flex-1 w-full flex flex-col items-start">
-        <h1 className="font-poppins text-white text-5xl leading-[76px] font-semibold">
+        <h1 className="font-poppins text-white text-5xl xs:leading-[76px] leading-[66px] font-semibold">
           You do the business,
           <br />
-           we’ll handle the money.
+          we’ll handle the money.
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           With the right credit card, you can improve your financial life by

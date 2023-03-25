@@ -58,7 +58,7 @@ export const features = [
   },
 ];
 
-export const feedback = [
+export const feedBacks = [
   {
     id: "feedback-1",
     content:

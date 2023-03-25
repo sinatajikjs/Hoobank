@@ -12,10 +12,11 @@ const Billing = () => {
         {/* gradient end */}
       </div>
       <div className="flex-1 flex flex-col gap-5 justify-center items-start ">
-        <h1 className="font-poppins text-white text-5xl leading-[76px] font-semibold w-full">
-          Easily control your <br className="sm:block hidden" /> billing & invoicing
+        <h1 className="font-poppins text-white text-5xl xs:leading-[76px] leading-[66px] font-semibold w-full">
+          Easily control your <br className="sm:block hidden" /> billing &
+          invoicing
         </h1>
-        <p className="font-poppins text-dimWhite text-[18px] leading-[30px] max-w-[470px]">
+        <p className="font-poppins text-dimWhite text-lg leading-[30px] max-w-[470px]">
           Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
           aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
           placerat.
