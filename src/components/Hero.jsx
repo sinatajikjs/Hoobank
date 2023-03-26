@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 text-white font-poppins ss:text-[72px] text-[52px] ss:leading-[100px] leading-[75px] font-semibold ">
+          <h1 className="flex-1 text-white  ss:text-[72px] text-[52px] ss:leading-[100px] leading-[75px] font-semibold ">
             {" "}
             The Next <br className="sm:block hidden" />{" "}
             <span className="text-gradient">Generation</span>
@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <h1 className="text-white font-poppins ss:text-[68px] text-[52px] ss:leading-[100px] leading-[75px] font-semibold w-full">
+        <h1 className="text-white  ss:text-[68px] text-[52px] ss:leading-[100px] leading-[75px] font-semibold w-full">
           Payment Method.
         </h1>
 

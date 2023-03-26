@@ -49,7 +49,7 @@ const Navbar = () => {
 export default Navbar;
 
 const NavLink = ({ nav }) => (
-  <li className="font-poppins font-normal text-white cursor-pointer text-base">
+  <li className=" font-normal text-white cursor-pointer text-base">
     <a href={`#${nav.id}`}>{nav.title}</a>
   </li>
 );

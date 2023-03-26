@@ -6,11 +6,11 @@ styles;
 const Business = () => {
   return (
     <section
-    id="features"
+      id="features"
       className={`sm:py-16 py-6 flex flex-col md:flex-row justify-center items-start gap-16`}
     >
       <div className="flex-1 w-full flex flex-col items-start">
-        <h1 className="font-poppins text-white text-5xl xs:leading-[76px] leading-[66px] font-semibold">
+        <h1 className=" text-white text-5xl xs:leading-[76px] leading-[66px] font-semibold">
           You do the business,
           <br />
           we’ll handle the money.
@@ -25,14 +25,17 @@ const Business = () => {
       <ul className="flex-1 flex flex-col gap-6">
         {features.map((li) => {
           return (
-            <li key={li.id} className="flex items-center gap-7 p-6 feature-card rounded-[20px] cursor-default">
+            <li
+              key={li.id}
+              className="flex items-center gap-7 p-6 feature-card rounded-[20px] cursor-default"
+            >
               <img src={li.icon} alt={li.title} />
               <div>
-                <h2 className="font-poppins text-lg font-semibold text-white">
+                <h2 className=" text-lg font-semibold text-white">
                   {li.title}
                 </h2>
 
-                <p className="font-poppins text-dimWhite ">{li.content}</p>
+                <p className=" text-dimWhite ">{li.content}</p>
               </div>
             </li>
           );

@@ -7,12 +7,10 @@ const Stats = () => {
       {stats.map((stat) => {
         return (
           <div key={stat.id} className="flex items-center gap-3">
-            <h1 className="text-white font-poppins font-semibold xs:text-[40px] xs:leading-[53.16px] leading-[43.16px] text-[30px]">
+            <h1 className="text-white  font-semibold xs:text-[40px] xs:leading-[53.16px] leading-[43.16px] text-[30px]">
               {stat.value}
             </h1>
-            <p className="text-gradient font-poppins text-[20px] uppercase">
-              {stat.title}
-            </p>
+            <p className="text-gradient  text-[20px] uppercase">{stat.title}</p>
           </div>
         );
       })}
