@@ -36,7 +36,15 @@ const Footer = () => {
         </p>
         <div className="flex gap-6">
           {socialIcons.map((icon) => {
-            return <img className='w-5 cursor-pointer' key={icon.id} src={icon.icon} alt={icon.id}  onClick={() => window.open(icon.link)} />;
+            return (
+              <img
+                className="w-5 cursor-pointer"
+                key={icon.id}
+                src={icon.icon}
+                alt={icon.id}
+                onClick={() => window.open(icon.link)}
+              />
+            );
           })}
         </div>
       </div>
