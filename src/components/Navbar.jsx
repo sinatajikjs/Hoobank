@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { close, logo, menu } from "@/assets";
+import { close, logo, menu, me } from "@/assets";
 import { navLinks } from "@/constants";
 
 const Navbar = () => {
@@ -22,8 +22,24 @@ const Navbar = () => {
         {navLinks.map((nav) => (
           <NavLink nav={nav} key={nav.id} />
         ))}
+        <a href="https://github.com/sinatajikjs">
+          <img
+            className="w-10 h-10 rounded-full object-cover"
+            target="_blank"
+            src={me}
+            alt="my github"
+          />
+        </a>
       </ul>
-      <div className="sm:hidden flex flex-1 justify-end items-center">
+      <div className="sm:hidden flex flex-1 gap-5 justify-end items-center">
+        <a href="https://github.com/sinatajikjs">
+          <img
+            className="w-10 h-10 rounded-full object-cover"
+            target="_blank"
+            src={me}
+            alt="my github"
+          />
+        </a>
         <img
           className="cursor-pointer w-7 object-contain"
           src={toggle ? close : menu}
